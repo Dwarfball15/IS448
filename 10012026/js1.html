@@ -1,0 +1,17 @@
+<h2>Image Size</h2>
+<input type="range" min="0" max="800" value="300" oninput="setWidth(this.value)">
+
+<h2>Opacity</h2>
+<input type="range" min="0" max="100" value="100" oninput="setOpacity(this.value)">
+
+<img src="burger.jpeg" id="burger">
+
+<script>
+    function setWidth(value) {
+        document.getElementById("burger").style.width = value + "px";
+    }
+
+    function setOpacity(value) {
+        document.getElementById("burger").style.opacity = value / 100;
+    }
+</script>
